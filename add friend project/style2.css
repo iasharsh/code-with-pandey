@@ -12,6 +12,9 @@ html, body{
 
 body{
     background-color: lightseagreen;
+}
+
+#section{
     display: flex;
     align-items: center;
     justify-content: center;

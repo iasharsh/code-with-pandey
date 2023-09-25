@@ -1,33 +1,21 @@
-var con = document.querySelectorAll('.cont');
-var love = document.querySelectorAll('.dummy');
-console.log(con);
+let con = document.getElementsByClassName('cont');
 
+for (let i of con){
+    i.addEventListener('dblclick',function(){
+        let love = i.getElementsByClassName('dummy')[0];
 
-for (let i in con){
-    x = con[i];
-    console.log(x);
-    x.addEventListener('dblclick',function(){
-        love[i].style.transform = 'translate(-50% , -50%) scale(1)';
-        love[i].style.opacity =  0.8;
+        love.style.transform = 'translate(-50% , -50%) scale(1)';
+        love.style.opacity =  0.8;
     
         setTimeout(function(){
-            love[i].style.opacity = 0;
+            love.style.opacity = 0;
         },1000)
-    
+
         setTimeout(function(){
-            love[i].style.transform = 'translate(-50% , -50%) scale(0)';
+            love.style.transform = 'translate(-50% , -50%) scale(0)';
         },2000)
     })
 }
- 
-
-
-
-
-
-
-
-
 
 
 
