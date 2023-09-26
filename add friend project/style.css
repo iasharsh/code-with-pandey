@@ -35,10 +35,11 @@ body{
     border-radius: 10px;
 }
 
-h1{
+#harsh{
     font-size: 27px;
     /* font-weight: 700; */
     margin: 10px 0;
+    color: black;
 }
 
 #card h5{
