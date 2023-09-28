@@ -69,6 +69,9 @@ body{
 }
 
 @media(max-width: 768px) {
+    body{
+        background-color: rgb(205, 179, 231);
+    }
     #card{
         height: 100%;
     }
