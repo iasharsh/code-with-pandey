@@ -39,15 +39,17 @@ function playPause() {
     pause = document.getElementsByClassName("fa-pause")[0];
 
     function playVid() {
-        video.play()
         pause.style.display = 'block';
         play.style.display = 'none';
+
+        video.play()
     }
 
     function pauseVid() {
-        video.pause()
         pause.style.display = 'none';
         play.style.display = 'block';
+
+        video.pause()
     }
 
 
@@ -59,7 +61,7 @@ function playPause() {
 
     for (let x of [play, pause]) {
         x.addEventListener('click', function () {
-            if (i == play) {
+            if (x == play) {
                 playVid()
             }
             else {
@@ -69,7 +71,42 @@ function playPause() {
     }
 }
 
+function clickKaro() {
+    var icon = document.querySelectorAll('.dummy');
+    c = 0;
 
+    for (let i of icon) {
+        i.addEventListener('click', function () {
+            if (c == 0) {
+                i.style.color = 'rgb(40, 189, 215)';
+                c = 1;
+            }
+            else {
+                i.style.color = 'white';
+                c = 0;
+            }
+        })
+    }
+}
+
+function shareKaro() {
+    share = document.getElementById("share")
+    copy = document.getElementById('copy');
+
+    share.addEventListener("click", function () {
+        navigator.clipboard.writeText(`https://cdn1.frocdn.ch/nP0VaUmZM7EUrjG.mp4`)
+
+        copy.style.setProperty("display", "block")
+        copy.style.setProperty("transition", "display 1s")
+
+        setTimeout(function(){
+            copy.style.setProperty("display", "none")
+        },2000)
+
+    })
+}
 
 sound()
 playPause()
+clickKaro()
+shareKaro()

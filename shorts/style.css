@@ -18,6 +18,7 @@ main {
     border-radius: 25px;
     border: 4px solid #484349;
     background-color: #fff;
+    position: relative;
 }
 
 
@@ -25,6 +26,7 @@ main {
     border-radius: 20px;
     height: 100%;
     width: 100%;
+    opacity: 0.9;
 }
 
 h1 {
@@ -34,5 +36,63 @@ h1 {
 
 #cont i {
     font-size: 30px;
-    position: relative;
+    /* position: relative; */
+    cursor: pointer;
+}
+
+#play {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    color: white;
+}
+
+#volume {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    color: white;
+}
+
+#like {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    color: white;
+}
+
+#dislike {
+    position: absolute;
+    top: 43%;
+    right: 3%;
+    color: white;
+}
+
+#comment {
+    position: absolute;
+    top: 52%;
+    right: 3%;
+    color: white;
+}
+
+#share {
+    position: absolute;
+    top: 65%;
+    right: 4%;
+    color: white;
+}
+
+#copy {
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    font-size: 25px;
+    text-align: center;
+    color: cyan;
+    font-weight: bolder;
+    display: none;
+}
+
+#notice{
+    font-weight: bolder;
 }
