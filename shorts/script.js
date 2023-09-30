@@ -94,7 +94,7 @@ function shareKaro() {
     copy = document.getElementById('copy');
 
     share.addEventListener("click", function () {
-        navigator.clipboard.writeText(`https://cdn1.frocdn.ch/nP0VaUmZM7EUrjG.mp4`)
+        navigator.clipboard.writeText(`https://iasharsh.github.io/code-with-pandey/shorts/index.html`)
 
         copy.style.setProperty("display", "block")
         copy.style.setProperty("transition", "display 1s")
